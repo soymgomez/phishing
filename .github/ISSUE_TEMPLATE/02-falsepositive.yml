@@ -38,7 +38,7 @@ body:
       required: true
     attributes:
       label: Whitelist type
-      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/mitchellkrogza/phishing#false-positives)
+      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/Phishing-Database/phishing#false-positives)
       multiple: false
       options:
         - '`1 to 1` match'
