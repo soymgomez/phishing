@@ -15,6 +15,8 @@ body:
         The second step is to rest assured one of our maintainers will address your issue as soon as possible.
 
         Please make sure you have provided as much information and details as possible to help speed up the processing of your whitelisting application.
+        
+        _You need to allow public access to all domain(s) in question, this include the white, safe and privacy enhanced Tor Network_
 
   - type: textarea
     id: FPrecord
