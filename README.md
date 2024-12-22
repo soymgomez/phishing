@@ -61,6 +61,6 @@ For better understanding of these specialities, you are welcome to read the tool
 
 [REG]: https://github.com/funilrys/tivilsta?tab=readme-ov-file#reg--the-regular-expression-rule
 
-[wildcard]: https://github.com/Ultimate-Hosts-Blacklist/whitelist/blob/script/README.rst#all
+[wildcard]: https://github.com/funilrys/tivilsta?tab=readme-ov-file#all--the-ends-with-rule
 
 [RZD]: https://github.com/funilrys/tivilsta?tab=readme-ov-file#rzd--the-broad-and-powerful-rule
