@@ -15,6 +15,8 @@ body:
         The second step is to rest assured one of our maintainers will address your issue as soon as possible.
 
         Please make sure you have provided as much information and details as possible to help speed up the processing of your whitelisting application.
+        
+        _You need to allow public access to all domain(s) in question, this include the white, safe and privacy enhanced Tor Network_
 
   - type: textarea
     id: FPrecord
@@ -38,7 +40,7 @@ body:
       required: true
     attributes:
       label: Whitelist type
-      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/mitchellkrogza/phishing#false-positives)
+      description: How do you believe the domain or uri should be whitelisted? More help can be found in the [README](https://github.com/Phishing-Database/phishing#false-positives)
       multiple: false
       options:
         - '`1 to 1` match'
