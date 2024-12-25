@@ -5,7 +5,14 @@ set -e
 GIT_DIR="$(git rev-parse --show-toplevel)"
 
 if [ -d "$GIT_DIR" ]; then
-    cd "${GIT_DIR}" || exit 1
+    if cd "${GIT_DIR}"; then # Maked the dir change a IF do to bad experience in @matrix
+        echo "Change dir Ok"
+        echo "Print working directory: $PWD"
+        echo
+    else
+        echo "This is not a git repo. Exiting"
+        exit 1
+    fi
 
     HIERARCHICALLY=(
         "add-domain" # Sorting hierarchically do to sub-domains
