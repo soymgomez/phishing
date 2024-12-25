@@ -1,10 +1,15 @@
 ## Phishing Domain/URL/IP(s):
 <!-- Required. Use Back ticks. -->
+```
+
+```
 
 
 ## Impersonated domain
 <!-- Required. Use Back ticks. -->
+```
 
+```
 
 ## Describe the issue
 <!-- Be as clear as possible: nobody can read your mind, and nobody is looking at your issue over your shoulder. -->
