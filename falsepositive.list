@@ -1,10 +1,4 @@
 # This list is used to match 1 to 1
-bnpparibas.com
-www.bnpparibas.com
-bnpparibas.co.uk
-bnpparibas.ru
-bnpparibas.fr
-corp.bnpparibasbank.ru
 olympic.af
 telekom.culturizer.app
 click.ltms.app
@@ -32,6 +26,8 @@ auth.absolutezerohost.com
 amazon.com
 androidauthority.com
 bbva.com
+bnpparibas.com
+www.bnpparibas.com
 bonloyalty.com
 canva.com
 eu-1.cdn77-storage.com
@@ -88,6 +84,7 @@ sparkasse-mittelthueringen.de
 sparkasse-wiesental.de
 zfrmz.eu
 forms.zohopublic.eu
+bnpparibas.fr
 quicksign.fr
 haproxy-vip.quicksign.fr
 da.gd
@@ -120,9 +117,12 @@ westandsons.co.nz
 crpkosovo.org
 addons.mozilla.org
 zenodo.org
+bnpparibas.ru
+corp.bnpparibasbank.ru
 google.ru
 donaldservice.se
 tecnoasia.com.sg
 bio.site
+bnpparibas.co.uk
 aliexpress.us
 su.vc
