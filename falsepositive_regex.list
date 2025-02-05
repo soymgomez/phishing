@@ -6,3 +6,4 @@ surveysparrow.com
 rtu.lv
 idtech.no
 vuagame.store
+^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
