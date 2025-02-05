@@ -1,3 +1,4 @@
+^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
 campaign-statistics.com
 nvidia.com
 saudi-k.com
@@ -6,4 +7,3 @@ surveysparrow.com
 rtu.lv
 idtech.no
 vuagame.store
-^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
