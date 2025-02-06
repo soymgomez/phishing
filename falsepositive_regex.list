@@ -1,4 +1,5 @@
 ^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
+^(api|f)(\d{0,3})?\.backblazeb2\.com(\/.*)?
 campaign-statistics\.com
 nvidia\.com
 saudi-k\.com
