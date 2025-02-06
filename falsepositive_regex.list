@@ -1,9 +1,9 @@
 ^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
-campaign-statistics.com
-nvidia.com
-saudi-k.com
-surveysparrow.com
-(^|.*\.)exo\.io
-rtu.lv
-idtech.no
-vuagame.store
+campaign-statistics\.com
+nvidia\.com
+saudi-k\.com
+surveysparrow\.com
+^(.*\.)?exo\.io
+rtu\.lv
+idtech\.no
+vuagame\.store
