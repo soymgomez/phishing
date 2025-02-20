@@ -1,10 +1,11 @@
+^(.*\.)?exo\.io
 ^(.*\.)?s3\..*\.backblazeb2\.com(\/.*)?
+^(alpha|app|beta-qbo)\.tieit\.io
 ^(api|f)(\d{0,3})?\.backblazeb2\.com(\/.*)?
 campaign-statistics\.com
+idtech\.no
 nvidia\.com
+rtu\.lv
 saudi-k\.com
 surveysparrow\.com
-^(.*\.)?exo\.io
-rtu\.lv
-idtech\.no
 vuagame\.store
