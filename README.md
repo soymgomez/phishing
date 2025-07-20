@@ -8,7 +8,7 @@ Since pushing to the main repository is prohibited, this repository serves as an
 area for anyone to submit changes to the Phishing Database.
 
 > [!CAUTION]
-> We are in the process of migrating this repository to a new structure. The files at the top-level directories will be removed in the future. Please use the new structure for contributions.
+> The files in the top-level directories have been migrated to the new structure and are now deleted. For all future contributions and downloads, please use the new directory structure.
 
 # Table of Contents <!-- omit in toc -->
 
