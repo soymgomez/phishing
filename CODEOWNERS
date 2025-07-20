@@ -1,0 +1,5 @@
+# Safekeepers controls all files in the repository.
+* @Phishing-Database/safekeepers
+
+# Except the files in the .github directory.
+.github/ @Phishing-Database/maintainers
