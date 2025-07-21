@@ -14,8 +14,15 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout the repo
+      - name: Checkout the repo (if push)
+        if: github.event_name == 'push'
         uses: actions/checkout@main
+
+      - name: Checkout the repo (if pull request)
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@main
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Install dependencies
         run: |
