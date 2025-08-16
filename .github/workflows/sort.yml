@@ -1,10 +1,8 @@
 name: Sort Lists
 on:
-  pull_request:
   push:
     branches:
       - master
-      - restructure
 
 permissions:
   contents: write
