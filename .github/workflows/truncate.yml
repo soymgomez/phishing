@@ -20,12 +20,16 @@ jobs:
 
       - name: Sort list
         run: |
-          # Sort all .list files in the additions directory
+          # Truncate all .list files in the additions directory
           find ${{ github.workspace }}/additions -type f -ipath '*temporary*' -exec truncate -s0 {} \;
 
-          # Sort all .list files in the falsepositives directory
+          # Truncate all .list files in the falsepositives directory
           find ${{ github.workspace }}/falsepositives -type f -ipath '*temporary*' -regextype posix-extended -iregex ".*\.(all|reg|rzdb)\.list" -exec awk -i inplace 'NR > 5 { next } { print }' {} \;
           find ${{ github.workspace }}/falsepositives -type f -ipath '*temporary*' -regextype posix-extended -not -iregex ".*\.(all|reg|rzdb)\.list" -exec truncate -s0 {} \;
+
+          # Truncate all .list files in the bypasses directory
+          find ${{ github.workspace }}/bypasses -type f -ipath '*temporary*' -regextype posix-extended -iregex ".*\.(all|reg|rzdb)\.list" -exec awk -i inplace 'NR > 5 { next } { print }' {} \;
+          find ${{ github.workspace }}/bypasses -type f -ipath '*temporary*' -regextype posix-extended -not -iregex ".*\.(all|reg|rzdb)\.list" -exec truncate -s0 {} \;
 
       - name: Output changes
         run: git status

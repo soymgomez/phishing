@@ -12,7 +12,7 @@ area for anyone to submit changes to the Phishing Database.
 
 # Table of Contents <!-- omit in toc -->
 
-- [Additions and False Positives](#additions-and-false-positives)
+- [Additions, False Positives and Bypasses](#additions-false-positives-and-bypasses)
   - [Additions](#additions)
     - [Domains](#domains)
     - [Links](#links)
@@ -21,15 +21,20 @@ area for anyone to submit changes to the Phishing Database.
     - [Domains](#domains-1)
     - [Links](#links-1)
     - [IPs](#ips-1)
+  - [Bypasses](#bypasses)
+    - [Domains](#domains-2)
+    - [Links](#links-2)
+    - [IPs](#ips-2)
 - [Additional External Resources](#additional-external-resources)
 - [Repository Operations](#repository-operations)
 
-# Additions and False Positives
+# Additions, False Positives and Bypasses
 
-We now categorize contributions into two main directories:
+We now categorize contributions into three main directories:
 
 - `additions/`: Contains files for adding phishing domains, links, and IPs.
 - `falsepositives/`: Contains files for whitelisting false positives.
+- `bypasses/`: Contains files for bypassing any whitelisting rules from the project's very own engine or any [external resources](#additional-external-resources) of false positive.
 
 Within these directories, we categorize contributions further into 2 timeframes:
 
@@ -90,6 +95,37 @@ Within the above directories, you can find the files listed bellow.
 | `falsepositives/**/ips.cidr.list`      | Contains a list of IPs to be whitelisted as false positives in CIDR notation. _(cf: RFC-5737)_                |
 | `falsepositives/**/ips.arpa.list`      | Contains a list of IPs to be whitelisted as false positives in ARPA/PTR format. _(cf: RFC-5737)_              |
 | `falsepositives/**/ips.cidr.arpa.list` | Contains a list of IPs to be whitelisted as false positives in CIDR notation in ARPA format. _(cf: RFC-5737)_ |
+
+## Bypasses
+
+In addition to the false positives, a set of bypass rules are available to allow discussions and bypasses of any false positive that may come from the project's very own engine or any [external resources](#additional-external-resources) of false positive.
+
+> [!NOTE]
+> The Phishing.Database project uses the [Givilsta](https://github.com/funilrys/givilsta) project to process any files in the `bypass/` directory against the main repository. Please keep that in mind when you are tented to add huge lists of domains, links, or IPs.
+
+### Domains
+
+| Filename                        | Description                                                                                                                                                                   |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `bypasses/**/domains.list`      | Contains a list of domains to be bypassed when processing false positives. This is a 1:1 match.                                                                               |
+| `bypasses/**/domains.all.list`  | Contains a list of domains to be bypassed when processing false positives. Any entry in this file will be prefixed with Givilsta's `ALL` flag _(cf: see Givilsta's readme)_.  |
+| `bypasses/**/domains.reg.list`  | Contains a list of domains to be bypassed when processing false positives. Any entry in this file will be prefixed with Givilsta's `REG` flag _(cf: see Givilsta's readme)_.  |
+| `bypasses/**/domains.rzdb.list` | Contains a list of domains to be bypassed when processing false positives. Any entry in this file will be prefixed with Givilsta's `RZDB` flag _(cf: see Givilsta's readme)_. |
+
+### Links
+
+| Filename                 | Description                                                                                   |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| `bypasses/**/links.list` | Contains a list of links to be bypassed when processing false positives. This is a 1:1 match. |
+
+### IPs
+
+| Filename                         | Description                                                                                                             |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `bypasses/**/ips.list`           | Contains a list of IPs to be bypassed when processing false positives. This is a 1:1 match.                             |
+| `bypasses/**/ips.cidr.list`      | Contains a list of IPs to be bypassed when processing false positives in CIDR notation. _(cf: RFC-5737)_                |
+| `bypasses/**/ips.arpa.list`      | Contains a list of IPs to be bypassed when processing false positives in ARPA/PTR format. _(cf: RFC-5737)_              |
+| `bypasses/**/ips.cidr.arpa.list` | Contains a list of IPs to be bypassed when processing false positives in CIDR notation in ARPA format. _(cf: RFC-5737)_ |
 
 # Additional External Resources
 
