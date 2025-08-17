@@ -21,8 +21,8 @@ area for anyone to submit changes to the Phishing Database.
     - [Domains](#domains-1)
     - [Links](#links-1)
     - [IPs](#ips-1)
+- [Additional External Resources](#additional-external-resources)
 - [Repository Operations](#repository-operations)
-
 
 # Additions and False Positives
 
@@ -47,13 +47,11 @@ Within the above directories, you can find the files listed bellow.
 | `additions/**/domains.list`          | Container a list of domains to be added to the Phishing.Database.                              |
 | `additions/**/domains.wildcard.list` | Contains a list of domains to be added and considered as wildcards - as we meet them overtime. |
 
-
 ### Links
 
 | Filename                  | Description                                                           |
 | ------------------------- | --------------------------------------------------------------------- |
 | `additions/**/links.list` | Contains a list of links / URLs to be added to the Phishing.Database. |
-
 
 ### IPs
 
@@ -63,7 +61,6 @@ Within the above directories, you can find the files listed bellow.
 | `additions/**/ips.cidr.list`      | Contains a list of IPs to be added to the Phishing.Database in CIDR notation. _(cf: RFC-5737)_                |
 | `additions/**/ips.arpa.list`      | Contains a list of IPs to be added to the Phishing.Database in ARPA/PTR format. _(cf: RFC-5737)_              |
 | `additions/**/ips.cidr.arpa.list` | Contains a list of IPs to be added to the Phishing.Database in CIDR notation in ARPA format. _(cf: RFC-5737)_ |
-
 
 ## False Positives
 
@@ -94,6 +91,13 @@ Within the above directories, you can find the files listed bellow.
 | `falsepositives/**/ips.arpa.list`      | Contains a list of IPs to be whitelisted as false positives in ARPA/PTR format. _(cf: RFC-5737)_              |
 | `falsepositives/**/ips.cidr.arpa.list` | Contains a list of IPs to be whitelisted as false positives in CIDR notation in ARPA format. _(cf: RFC-5737)_ |
 
+# Additional External Resources
+
+In addition to the false-positive files listed above, we also integrate external resources that are used for false positives. These resources are not directly part of the Phishing.Database project but are used to enhance the accuracy of our false-positive detection.
+
+| Project                                                                            | Used Resource                                                                                 | Integration         |
+| ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------- |
+| [PeterDaveHello/url-shorteners](https://github.com/PeterDaveHello/url-shorteners/) | [url-shorteners](https://raw.githubusercontent.com/PeterDaveHello/url-shorteners/master/list) | false positive list |
 
 # Repository Operations
 
