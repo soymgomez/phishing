@@ -27,6 +27,8 @@ area for anyone to submit changes to the Phishing Database.
     - [IPs](#ips-2)
 - [Additional External Resources](#additional-external-resources)
 - [Repository Operations](#repository-operations)
+  - [Synchronization](#synchronization)
+  - [Bypass Handling](#bypass-handling)
 
 # Additions, False Positives and Bypasses
 
@@ -137,6 +139,29 @@ In addition to the false-positive files listed above, we also integrate external
 
 # Repository Operations
 
+## Synchronization
+
 The state of the `master` branch will be automatically fetched every few hours and integrated into
 the next update of the main repository. The latest state of the fetched data will
 be reflected in the [frozen-dataset](https://github.com/Phishing-Database/frozen-datasets) repository.
+
+## Bypass Handling
+
+_**TL;DR:** The `bypasses/` directory is used to bypass any false positive that may come from the
+project's very own engine or any [external resources](#additional-external-resources) of false positive._
+
+---
+
+Let's assume that `example.me` is a domain that is listed in one of our [external-resources](#additional-external-resources),
+which is being used as a source for false positives. Being listed there means that `example.me` will be whitelisted and no
+`example.me` links will be integrated into the Phishing.Database project.
+
+What if `example.me` is now a threat? In this case, we would want to ensure that it is not whitelisted and that any links
+containing `example.me` are processed as phishing links.
+
+That's where [bypasses](#bypasses) come in. Since we assume that the source list is a simple list of domains with
+[no extra rules](https://github.com/funilrys/givilsta?tab=readme-ov-file#no-flag-the-purest-form-of-ruling), we can add
+`example.me` to the `bypasses/{timeframe}/domains.list` file.
+
+Once the change is merged and pushed, our engine will download the file and effectively disable `example.me` from being
+whitelisted. This means that any time one of our sources lists a link from `example.me`, it will be kept and handled accordingly.
