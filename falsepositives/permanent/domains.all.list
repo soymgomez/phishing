@@ -4,7 +4,6 @@
 # Tool & Specification: https://github.com/funilrys/givilsta/blob/master/README.md
 #
 airtable.com
-amazonaws.com
 amazon-logistics.com
 amazon.ae
 amazon.ca
@@ -31,6 +30,7 @@ amazon.pl
 amazon.sa
 amazon.se
 amazon.sg
+amazonaws.com
 ciamlogin.com
 exo.io
 flk-ipfs.xyz
